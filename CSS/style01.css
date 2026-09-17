@@ -1,0 +1,22 @@
+.btn-start {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background-color: #3b9319;
+            color: #ffffff;
+            font-family: 'Fira Code', monospace;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 12px 28px;
+            border-radius: 8px;
+            border: 1px solid #4ca827;
+            text-decoration: none;
+            box-shadow: 0 0 25px rgba(59, 147, 25, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .btn-start:hover {
+            background-color: #42a21c;
+            box-shadow: 0 0 35px rgba(59, 147, 25, 0.65);
+        }

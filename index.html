@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Thanaporn Srijan - 1</title>
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            min-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0;
+        }
+
+        .container {
+            width: 1100px;
+            background-color: #050505;
+            padding: 0 0 50px 0;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+        }
+
+        /* Navbar Styling */
+        .navbar-wrapper {
+            width: 100%;
+            padding: 0 60px;
+        }
+
+        .navbar {
+            background-color: #1a1a1a;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            padding: 22px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 45px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #a0a0a0;
+            text-decoration: none;
+            font-family: 'Fira Code', monospace;
+            font-size: 13px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ffffff;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 22px;
+            align-items: center;
+        }
+
+        .social-links a {
+            color: #a0a0a0;
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #ffffff;
+        }
+
+        /* Hero Content Styling */
+        .hero-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 70px 40px 70px;
+        }
+
+        .hero-text {
+            max-width: 480px;
+        }
+
+        .student-id {
+            font-size: 42px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            line-height: 1.1;
+            margin-bottom: 5px;
+        }
+
+        .student-name {
+            font-size: 42px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            color: #777777;
+            font-family: 'Fira Code', monospace;
+            font-size: 13px;
+            line-height: 1.7;
+            margin-bottom: 35px;
+        }
+
+        /* Button Styling */
+        .btn-start {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background-color: #3b9319;
+            color: #ffffff;
+            font-family: 'Fira Code', monospace;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 12px 28px;
+            border-radius: 8px;
+            border: 1px solid #4ca827;
+            text-decoration: none;
+            box-shadow: 0 0 25px rgba(59, 147, 25, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .btn-start:hover {
+            background-color: #42a21c;
+            box-shadow: 0 0 35px rgba(59, 147, 25, 0.65);
+        }
+
+        /* Profile Image */
+        .hero-image {
+            position: relative;
+        }
+
+        .profile-img {
+            width: 360px;
+            height: 360px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Worked With Section */
+        .worked-with {
+            padding: 20px 70px 0 70px;
+        }
+
+        .worked-with-title {
+            color: #ffffff;
+            font-family: 'Fira Code', monospace;
+            font-size: 12px;
+            margin-bottom: 18px;
+        }
+
+        .brand-grid {
+            display: flex;
+            gap: 20px;
+        }
+
+        .brand-card {
+            flex: 1;
+            background-color: #090909;
+            border: 1px solid #161616;
+            border-radius: 8px;
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 10px;
+            transition: border-color 0.3s ease;
+        }
+
+        .brand-card:hover {
+            border-color: #2a2a2a;
+        }
+
+        .brand-card svg {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Navigation Header -->
+        <div class="navbar-wrapper">
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Recent work</a></li>
+                    <li><a href="#">Get In Touch</a></li>
+                </ul>
+                <div class="social-links">
+                    <a href="#" class="hover:text-white transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Main Hero Content -->
+        <section class="hero-section">
+            <div class="hero-text">
+                <h1 class="student-id">6619410055</h1>
+                <h2 class="student-name">Thanaporn Srijan</h2>
+
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt rem odit labore unde nemo omnis
+                    sequi hic sit laudantium repellendus recusandae vitae ea laborum, ipsa nisi eos autem.
+                </p>
+
+                <a href="#" class="btn-start">
+                    Let's get started <i class="fas fa-chevron-right" style="font-size: 12px;"></i>
+                </a>
+            </div>
+
+            <div class="hero-image">
+                <img class="profile-img" src="images/ai1.jpg" alt="Profile Picture">
+            </div>
+        </section>
+
+        <!-- Worked With Section -->
+        <section class="worked-with">
+            <div class="worked-with-title">Worked with</div>
+            <div class="brand-grid">
+
+                <!-- ClickUp -->
+                <div class="brand-card">
+                    <img class="brand-card-img" src="images/logo1.png" alt="logo Picture">
+                </div>
+
+                <!-- Dropbox -->
+                <div class="brand-card">
+                    <img class="brand-card-img" src="images/logo2.png" alt="logo Picture">
+                </div>
+
+                <!-- PAYCHEX -->
+                <div class="brand-card">
+                    <img class="brand-card-img" src="images/logo3.png" alt="logo Picture">
+                </div>
+
+                <!-- elastic -->
+                <div class="brand-card">
+                    <img class="brand-card-img" src="images/logo4.png" alt="logo Picture">
+                </div>
+
+                <!-- stripe -->
+                <div class="brand-card">
+                    <img class="brand-card-img" src="images/logo5.png" alt="logo Picture">
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
